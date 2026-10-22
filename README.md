@@ -231,6 +231,54 @@ Mexico City stood out in the broader traffic dataset, while Bogotá presented a 
 These findings support further research and investment feasibility assessments rather than immediate policy decisions.
 
 
+## Business Recommendations
+
+The following recommendations are based on the exploratory analysis of 2024 traffic congestion and economic indicators.
+
+### 1. Prioritize Further Mobility Research in Bogotá
+
+**Finding:** Bogotá recorded an average traffic delay indicator of 1,141.55 and GDP per capita of $11,442, compared with 571.09 and $18,117, respectively, for Buenos Aires.
+
+**Recommendation:** Conduct a detailed mobility needs assessment in Bogotá, including public transportation capacity, congestion hotspots, travel demand, and infrastructure conditions.
+
+**Expected Value:** Identify the most relevant transportation challenges before determining whether new infrastructure or operational improvements are justified.
+
+### 2. Investigate Congestion Conditions in Mexico City
+
+**Finding:** Mexico City recorded the highest average traffic delay indicator (2,833.06) in the broader 2024 traffic aggregation.
+
+**Recommendation:** Complement the city-level analysis with traffic data by road segment, time of day, and transportation mode.
+
+**Expected Value:** Identify specific congestion patterns that could support more targeted mobility planning.
+
+### 3. Expand the Analysis Beyond GDP per Capita
+
+**Finding:** The Pearson correlation between traffic delay and GDP per capita was weak and positive (r = 0.283).
+
+**Recommendation:** Include additional explanatory variables, such as population density, public transportation coverage, vehicle ownership, urban expansion, and employment concentration.
+
+**Expected Value:** Improve the understanding of factors associated with congestion and reduce reliance on a single economic indicator.
+
+### 4. Strengthen Data Coverage and Comparability
+
+**Finding:** The analysis integrated TomTom and OECD datasets using an INNER JOIN, retaining only matching city-year observations.
+
+**Recommendation:** Review unmatched cities, standardize geographical identifiers, and evaluate data availability across multiple years.
+
+**Expected Value:** Improve the representativeness and comparability of future mobility and economic analyses.
+
+### 5. Establish a Mobility Monitoring Framework
+
+**Finding:** The project demonstrated that traffic and economic indicators can be standardized and compared at the city-year level.
+
+**Recommendation:** Develop periodic monitoring of congestion indicators alongside economic and demographic variables, using a reproducible data preparation process and visual dashboard.
+
+**Expected Value:** Support the identification of emerging mobility trends and provide a stronger evidence base for future transportation planning studies.
+
+---
+
+**Implementation Note:** These recommendations are exploratory proposals. The project did not assess infrastructure costs, forecast investment returns, establish causal relationships, or measure the impact of transportation interventions.
+
 ---
 
 ## Project Visualizations
