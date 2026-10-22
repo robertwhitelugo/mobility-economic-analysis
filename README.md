@@ -154,12 +154,82 @@ The project followed a standard Exploratory Data Analysis (EDA) process:
 
 ---
 
-## Key Findings
 
-- Mexico City presented the highest average traffic delay among the analyzed cities.
-- The Pearson correlation coefficient between GDP per capita and traffic delay was **0.283**, indicating a weak positive linear relationship.
-- Cities with high congestion do not necessarily exhibit higher or lower economic performance.
-- Bogotá emerged as a representative case of high congestion combined with relatively lower economic productivity compared with Lima and Buenos Aires.
+## Key Findings & Business Insights
+
+### 1. Data Processing and Integration
+
+The initial traffic dataset contained 1,004,464 observations, while the economic dataset contained 30 records covering different cities and years.
+
+Python and Pandas were used to standardize column names, convert dates and numeric fields, filter observations for 2024, and aggregate traffic metrics at the city-year level.
+
+An INNER JOIN combined the mobility and economic datasets using city and year as matching keys.
+
+**Analytical Value:**
+
+The project demonstrates how large-scale traffic observations can be transformed into comparable city-level indicators and integrated with economic information.
+
+### 2. Mexico City: Highest Traffic Congestion in the Aggregated Traffic Dataset
+
+Mexico City recorded the highest average `jams_delay` value in the 2024 traffic aggregation:
+
+- Mexico City: 2,833.06
+- Tokyo: 2,152.57
+- New York: 2,133.40
+
+These figures represent the TomTom traffic delay metric, aggregated by city, rather than individual commuter travel times.
+
+**Business Insight:**
+
+Mexico City's elevated congestion indicator suggests that it warrants further investigation into mobility conditions, transportation capacity, and urban infrastructure.
+
+### 3. Bogotá: High Congestion and Relatively Lower GDP per Capita
+
+The integrated dataset reported the following results:
+
+| City | Average Jams Delay | GDP per Capita |
+|---|---:|---:|
+| Bogotá | 1,141.55 | $11,442 |
+| Buenos Aires | 571.09 | $18,117 |
+
+Bogotá showed approximately twice the average traffic delay metric of Buenos Aires, alongside a lower GDP per capita.
+
+**Business Insight:**
+
+Bogotá represents a relevant candidate for further transportation planning research because its congestion levels are elevated relative to its economic indicators.
+
+However, this comparison does not establish infrastructure investment priority on its own.
+
+### 4. Weak Relationship Between Congestion and GDP per Capita
+
+The Pearson correlation coefficient between GDP per capita and average traffic delay was:
+
+**r = 0.283**
+
+This indicates a weak positive linear relationship in the integrated dataset.
+
+**Business Insight:**
+
+GDP per capita alone does not adequately explain differences in congestion across the analyzed cities.
+
+Other factors, such as population density, transportation networks, urban development, and vehicle ownership, should be considered before drawing policy conclusions.
+
+### 5. Data Integration and Analysis Limitations
+
+The analysis was limited to observations corresponding to 2024.
+
+The INNER JOIN retained only matching city-year records from both datasets, so the final results should not be generalized to every city in the original traffic dataset.
+
+The exploratory findings identify associations and differences between cities, but they do not demonstrate causation or quantify the benefits of infrastructure investments.
+
+## Overall Business Interpretation
+
+The results illustrate how mobility and economic indicators can be combined to identify cities that merit closer investigation.
+
+Mexico City stood out in the broader traffic dataset, while Bogotá presented a notable combination of high congestion and comparatively lower GDP per capita in the integrated analysis.
+
+These findings support further research and investment feasibility assessments rather than immediate policy decisions.
+
 
 ---
 
