@@ -40,6 +40,25 @@ The objective is to identify patterns that may support decision-making related t
 
 ---
 
+## Business Problem
+
+Urban transportation authorities face difficult decisions when prioritizing infrastructure investments across cities with different levels of traffic congestion and economic development.
+
+High traffic congestion can affect travel efficiency and urban mobility, but congestion levels alone do not provide sufficient evidence to determine which cities should receive investment priority.
+
+This project explores how traffic congestion and GDP per capita vary across selected Latin American cities using 2024 data from the TomTom Traffic Index and OECD Metropolitan Database.
+
+The analysis addresses three main questions:
+
+- Which cities experience relatively high traffic delays?
+- How does GDP per capita vary across the cities included in the analysis?
+- Is there a measurable relationship between traffic congestion and GDP per capita?
+
+The objective is to identify patterns that could inform further transportation planning research, rather than make definitive infrastructure investment decisions.
+
+By integrating mobility and economic indicators, the project demonstrates how exploratory data analysis can help frame evidence-based questions for urban development.
+
+
 ## Business Answer
 
 Based on the exploratory analysis, **Bogotá** emerged as the strongest candidate among the analyzed cities. It combines relatively high traffic congestion with lower GDP per capita compared with Lima and Buenos Aires.
