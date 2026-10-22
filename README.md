@@ -78,14 +78,50 @@ Although the Pearson correlation coefficient (**0.283**) indicates only a weak p
 
 ---
 
-## Dataset
 
-The analysis combines two publicly available datasets:
+## Dataset Description & Data Preparation
 
-- **TomTom Traffic Index:** urban mobility indicators, including traffic delay, traffic index, travel time, and congestion-related measures.
-- **OECD Metropolitan Database:** economic and demographic indicators, including GDP per capita, unemployment, and population.
+### Data Sources
 
-The datasets were standardized, aggregated by city and year, and integrated using an **INNER JOIN**.
+The project combines two publicly available data sources:
+
+| Source | Information Used |
+|---|---|
+| TomTom Traffic Index | Traffic congestion, travel delays, and urban mobility indicators |
+| OECD Metropolitan Database | GDP per capita and other economic and demographic indicators |
+
+The analysis focused on selected Latin American cities using data corresponding to 2024.
+
+### Data Preparation
+
+Python and Pandas were used to prepare the datasets for integration and analysis.
+
+The main preparation steps included:
+
+1. **Data inspection:** Reviewed dataset structure, column names, data types, and available observations.
+2. **Data cleaning:** Standardized relevant fields and checked for missing or inconsistent values.
+3. **Date processing:** Prepared date information to identify observations corresponding to 2024.
+4. **Data aggregation:** Organized mobility and economic information at the city-year level.
+5. **Dataset integration:** Combined the prepared datasets using an INNER JOIN.
+6. **Final validation:** Reviewed the resulting dataset before performing exploratory analysis.
+
+### Analytical Dataset
+
+The integrated dataset was designed to compare traffic congestion and economic performance across cities using a consistent city-year structure.
+
+The final prepared data supported:
+
+- Comparisons of traffic delay across cities.
+- Comparisons of GDP per capita.
+- Visual exploration of mobility and economic indicators.
+- Pearson correlation analysis.
+
+### Data Preparation Considerations
+
+An INNER JOIN retains only observations with matching keys in both datasets. Therefore, cities without corresponding records in both sources may be excluded from the integrated dataset.
+
+The analysis should be interpreted as an exploratory comparison of the matched observations, rather than a complete assessment of all Latin American cities.
+
 
 ---
 
